@@ -1,5 +1,5 @@
 import heroImg from '../assets/hero.png';
-import logoImg from '../assets/logo.png';
+import logoImg from '../assets/logo ltw.png';
 import benefitsImg from '../assets/benefits.png';
 import newsletterImg from '../assets/newsletter.png';
 import story1 from '../assets/story1.png';
@@ -14,7 +14,9 @@ import age5 from '../assets/age13plus.png';
 
 export const navigation = [
   { name: 'Home', href: '#', active: true },
-  { name: 'Stories', href: '#' },
+  { name: 'Story Books', href: '#' },
+  { name: 'Coloring Books', href: '#' },
+  { name: 'Videos', href: '#' },
   { name: 'Categories', href: '#' },
   { name: 'Age Groups', href: '#' },
   { name: 'About Us', href: '#' },
@@ -22,7 +24,7 @@ export const navigation = [
 
 export const categories = [
   { name: 'Adventure', subtitle: 'Exciting journeys', icon: 'Rocket', color: 'bg-pastel-pink' },
-  { name: 'Bedtime', subtitle: 'Sweet dreams', icon: 'Moon', color: 'bg-pastel-lavender' },
+  { name: 'Bedtime', subtitle: 'Sweet dreams', icon: 'Moon', color: 'bg-pastel-purple' },
   { name: 'Values', subtitle: 'Good habits', icon: 'Heart', color: 'bg-rose-50' },
   { name: 'Fantasy', subtitle: 'Magical worlds', icon: 'Sparkles', color: 'bg-pastel-sky' },
   { name: 'Science', subtitle: 'Curious minds', icon: 'Atom', color: 'bg-pastel-mint' },
@@ -65,6 +67,45 @@ export const stories = [
     age: '4-7 yrs',
     duration: '9 min',
     category: 'Nature',
+  },
+];
+
+export const videos = [
+  {
+    id: 1,
+    title: 'The Solar System',
+    description: 'Explore the planets and stars in our galaxy.',
+    image: story2,
+    age: '5-9 yrs',
+    duration: '12 min',
+    category: 'Science',
+  },
+  {
+    id: 2,
+    title: 'Counting with Dinosaurs',
+    description: 'Learn numbers with friendly prehistoric pals.',
+    image: story1,
+    age: '3-6 yrs',
+    duration: '8 min',
+    category: 'Math',
+  },
+  {
+    id: 3,
+    title: 'The Water Cycle',
+    description: 'How rain works, explained for kids.',
+    image: story4,
+    age: '6-10 yrs',
+    duration: '15 min',
+    category: 'Nature',
+  },
+  {
+    id: 4,
+    title: 'Colors of the Rainbow',
+    description: 'A magical musical journey about colors.',
+    image: story3,
+    age: '2-5 yrs',
+    duration: '5 min',
+    category: 'Art',
   },
 ];
 

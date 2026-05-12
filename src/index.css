@@ -3,16 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @theme {
-  --color-primary-light: #22c7b8;
-  --color-primary-dark: #17b5b0;
-  --color-navy: #0f172a;
+  --color-primary-light: #1ab2c0;
+  --color-primary-dark: #1696a2;
+  --color-navy: #1a2b4b;
   --color-cream: #fffdf9;
   
+  --color-accent-yellow: #ffcc33;
+  --color-accent-orange: #ff7e33;
+  --color-accent-pink: #f46299;
+  --color-accent-purple: #7a5ac9;
+
   --color-pastel-pink: #fff1f2;
   --color-pastel-lavender: #f5f3ff;
   --color-pastel-mint: #f0fdf4;
   --color-pastel-sky: #f0f9ff;
   --color-pastel-peach: #fff7ed;
+  --color-pastel-purple: #f3f0ff;
 
   --font-rounded: "Fredoka", sans-serif;
   --font-body: "Nunito", sans-serif;
@@ -20,7 +26,7 @@
   --radius-4xl: 2rem;
   --radius-5xl: 3rem;
 
-  --background-image-gradient-teal: linear-gradient(135deg, #22c7b8 0%, #17b5b0 100%);
+  --background-image-gradient-teal: linear-gradient(135deg, #1ab2c0 0%, #1696a2 100%);
 }
 
 @layer base {
@@ -35,14 +41,22 @@
 
 @layer utilities {
   .gradient-teal {
-    background-image: linear-gradient(135deg, #22c7b8 0%, #17b5b0 100%);
+    background-image: linear-gradient(135deg, #1ab2c0 0%, #1696a2 100%);
+  }
+
+  .gradient-pink {
+    background-image: linear-gradient(135deg, #f46299 0%, #d8457c 100%);
+  }
+
+  .gradient-purple {
+    background-image: linear-gradient(135deg, #7a5ac9 0%, #5d42a6 100%);
   }
 
   .text-gradient {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(135deg, #22c7b8 0%, #17b5b0 100%);
+    background-image: linear-gradient(135deg, #1ab2c0 0%, #1696a2 100%);
   }
 
   .soft-shadow {

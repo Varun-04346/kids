@@ -8,9 +8,9 @@ const ReadingBenefits = () => {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-5xl p-8 lg:p-16 soft-shadow border border-gray-50 flex flex-col lg:flex-row items-center gap-16 overflow-hidden relative">
-          
+
           {/* Left Illustration */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -23,7 +23,7 @@ const ReadingBenefits = () => {
           <div className="flex-1">
             <h2 className="text-4xl lg:text-5xl font-bold text-navy mb-4">
               Why Reading<br />
-              <span className="text-primary-light italic">Matters</span>
+              <span className="text-accent-purple italic">Matters</span>
             </h2>
             <p className="text-lg text-gray-500 mb-12 font-medium">
               Stories help kids build imagination, kindness and confidence.
@@ -41,7 +41,7 @@ const ReadingBenefits = () => {
                     viewport={{ once: true }}
                     className="flex gap-4"
                   >
-                    <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-pastel-mint flex items-center justify-center text-primary-light">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-pastel-pink flex items-center justify-center text-accent-pink">
                       <Icon size={28} />
                     </div>
                     <div>
@@ -55,7 +55,7 @@ const ReadingBenefits = () => {
               })}
             </div>
 
-            <button className="mt-12 px-8 py-3.5 gradient-teal text-white rounded-full font-bold text-sm hover:shadow-lg transition-all">
+            <button className="mt-12 px-8 py-3.5 gradient-purple text-white rounded-full font-bold text-sm hover:shadow-lg transition-all shadow-md shadow-purple-500/20">
               Learn More
             </button>
           </div>

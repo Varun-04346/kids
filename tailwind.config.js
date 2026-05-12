@@ -8,17 +8,24 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: '#22c7b8',
-          dark: '#17b5b0',
+          light: '#1ab2c0', // Exact teal from image
+          dark: '#1696a2',  // Matching dark teal for gradients
         },
-        navy: '#0f172a',
+        navy: '#1a2b4b',    // Exact deep navy from image
         cream: '#fffdf9',
+        accent: {
+          yellow: '#ffcc33',
+          orange: '#ff7e33',
+          pink: '#f46299', // New Pink
+          purple: '#7a5ac9', // New Purple
+        },
         pastel: {
           pink: '#fff1f2',
           lavender: '#f5f3ff',
           mint: '#f0fdf4',
           sky: '#f0f9ff',
           peach: '#fff7ed',
+          purple: '#f3f0ff',
         }
       },
       fontFamily: {

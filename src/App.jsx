@@ -1,27 +1,26 @@
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import CategoryCards from './components/CategoryCards/CategoryCards';
-import StoryCards from './components/StoryCards/StoryCards';
-import AgeGroups from './components/AgeGroups/AgeGroups';
-import ReadingBenefits from './components/ReadingBenefits/ReadingBenefits';
-import Newsletter from './components/Newsletter/Newsletter';
 import Footer from './components/Footer/Footer';
+import Home from './pages/Home';
+import Stories from './pages/Stories';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
-        <Hero />
-        <CategoryCards />
-        <StoryCards />
-        <AgeGroups />
-        <ReadingBenefits />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-cream flex flex-col">
+
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/stories" element={<Stories />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

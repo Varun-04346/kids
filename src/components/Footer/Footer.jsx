@@ -10,8 +10,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <img src={assets.logo} alt="TaleTree Logo" className="w-10 h-10 object-contain" />
-              <span className="text-2xl font-rounded font-bold text-navy">TaleTree</span>
+              <img src={assets.logo} alt="Little Tech Wizard Logo" className="h-12 w-auto object-contain mix-blend-multiply" />
+              <div className="flex items-center text-2xl font-rounded font-black tracking-tight pt-1">
+                <span className="text-[#f46299]">Little</span>
+                <span className="text-[#1ab2c0] ml-1.5">Tech</span>
+                <span className="text-[#7a5ac9] ml-1.5">Wizard</span>
+              </div>
             </div>
             <p className="text-gray-500 font-medium leading-relaxed max-w-sm">
               Sparking imagination and nurturing young minds through the magic of storytelling. 
@@ -27,7 +31,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-navy hover:gradient-teal hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md"
+                  className="w-10 h-10 rounded-full border border-gray-100 flex items-center justify-center text-navy hover:gradient-purple hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md"
                   aria-label={label}
                 >
                   <Icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -72,7 +76,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400 font-medium">
-          <p>© 2026 TaleTree. All rights reserved.</p>
+          <p>© 2026 Little Tech Wizard. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-light transition-colors">Privacy</a>
             <a href="#" className="hover:text-primary-light transition-colors">Terms</a>
